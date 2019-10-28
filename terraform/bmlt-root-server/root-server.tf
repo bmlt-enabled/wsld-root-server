@@ -58,6 +58,7 @@ unzip bmlt-root-server.zip
 rm -f bmlt-root-server.zip
 mv main_server /var/www/html/main_server
 rm -f /var/www/html/index.html
+chown -R www-data: /var/www/html
 EOF
 
   lifecycle {

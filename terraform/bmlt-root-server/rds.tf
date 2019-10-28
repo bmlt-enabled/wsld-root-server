@@ -5,7 +5,7 @@ resource aws_db_instance root_server {
   engine                 = "mysql"
   engine_version         = "5.7"
   instance_class         = "db.t3.micro"
-  name                   = "wsldrootserver${var.environment}"
+  name                   = "wsld"
   username               = "wsld"
   password               = var.rds_password
   db_subnet_group_name   = aws_db_subnet_group.root_server.id

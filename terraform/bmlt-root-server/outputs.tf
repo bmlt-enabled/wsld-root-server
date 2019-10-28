@@ -3,5 +3,5 @@ output root_server_ip {
 }
 
 output database_hostname {
-  value = aws_db_instance.root_server.endpoint
+  value = aws_db_instance.root_server.address
 }
